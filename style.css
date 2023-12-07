@@ -67,7 +67,19 @@
   margin: 0;
   position: absolute;
   top: 30%;
-  left: 60%;
+  left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+#title { 
+  position: absolute;
+  top: 7%; /* Adjust the top value to center vertically */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 60px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;
+  color: #fff; 
 }
