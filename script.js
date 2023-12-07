@@ -33,17 +33,39 @@ function containsSinfulWord(text) {
        "creativity", "open-mindedness", "resilience", "courage", "empathy", "tolerance"
    ];
 
-   const words = text.split(/\s+/); // Split the text into words
+   const words = text.split(/\s+/);
    return words.some(word => sinfulWords.includes(word.toLowerCase()));
 };
 
+const partyApprovedWords = {
+    "love": "affection", "freedom": "controlled autonomy", "rebellion": "conformity",
+    "individuality": "collective identity", "truth": "approved facts",
+    "privacy": "state-observed isolation", "individualism": "group cohesion",
+    "resistance": "obedience", "knowledge": "sanctioned information",
+    "emotion": "regulated sentiment", "hope": "compliant optimism",
+    "curiosity": "limited inquiry", "creativity": "sanctioned expression",
+    "independence": "unified dependence", "dissent": "uniform agreement",
+    "self-expression": "approved communication", "intimacy": "controlled closeness",
+    "autonomy": "restricted self-governance", "defiance": "obedient resistance",
+    "dignity": "collective respect", "compassion": "party-defined fairness",
+    "justice": "guided choice", "truthfulness": "controlled fervor",
+    "free will": "uniform fairness", "passion": "state-approved progress",
+    "equality": "approved happiness", "innovation": "comrade companionship",
+    "joy": "collective autonomy", "friendship": "compliant optimism",
+    "open-mindedness": "approved receptiveness", "resilience": "endurance within limits",
+    "courage": "controlled bravery", "empathy": "official understanding",
+    "tolerance": "conformist acceptance"
+  };
+  
 notesContainer.addEventListener("click", function(e){ 
    const inputText = inputBox.innerText;
-   
    if (containsSinfulWord(inputText)) {
-       alert("This note contains a sinful word!");
-   }
+       alert("This praise contains sinful words! Its contents have been modified to reflect your true beleifs.");
+       inputBox.innerText = inputText.replace(sinfulWords, partyApprovedWords);
+       updateStorage();
 
+   }
+// I love freedom and rebellion!
    else if (e.target.tagName === "P") { 
        notes = document.querySelectorAll(".input-box"); 
        notes.forEach(nt => {
