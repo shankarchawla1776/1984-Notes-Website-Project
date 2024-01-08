@@ -21,4 +21,4 @@ The project was inspired by the the novel 1984 by George Orwell. In the novel, t
 In this instance, the sinful words are 'love' and 'rebellion'
 
 ## new text appears in place of the sinful words ##
-<img width="1682" alt="Screenshot 2024-01-08 at 11 05 20 AM" src="https://github.com/shankarchawla1776/1984-Notes-Website-Project/assets/139474458/a6eb50a7-c0b4-4c7d-a427-1fd4935d393d">
+<img width="1709" alt="Screenshot 2024-01-08 at 11 08 34 AM" src="https://github.com/shankarchawla1776/1984-Notes-Website-Project/assets/139474458/99b7bd29-3da7-4935-a92d-9b7ddf4e0152">
