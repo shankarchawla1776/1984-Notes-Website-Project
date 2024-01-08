@@ -7,4 +7,4 @@ This project takes text input and checks if any of the written words are within 
 
 The project was inspired by the the novel 1984 by George Orwell. In the novel, the main character is observed comitting 'throughtcrime' by writing somewhate revolutionary phrases in a notebook. This more advanced writing medium allows for increased regulation and control over the ponderings and thoughts of individuals. 
 
-![Uploading Screenshot 2024-01-08 at 11.00.12 AM.png…]()
+<img width="1710" alt="Screenshot 2024-01-08 at 11 01 08 AM" src="https://github.com/shankarchawla1776/1984-Notes-Website-Project/assets/139474458/a58b8634-a44c-4a83-8c7e-b4d7dc7e0117">
