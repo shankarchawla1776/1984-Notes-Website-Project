@@ -1,5 +1,7 @@
 # 1984-Notes-Website-Project
-Website project for 1984 
+Project for 1984. 
+
+For this creative project in my English II class, I chose to create an interactive website as an extension of ideas posed in the novel. 
 
 This project takes text input and checks if any of the written words are within a set dictionary of 'sinful word.' If so, it changes them to corresponding words in the dictionary. 
 
