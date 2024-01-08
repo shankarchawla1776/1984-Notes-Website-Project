@@ -60,45 +60,14 @@ const partyApprovedWords = {
 notesContainer.addEventListener("click", function(e){ 
    const inputText = inputBox.innerText;
    if (containsSinfulWord(inputText)) {
-       alert("This praise contains sinful words! Its contents have been modified to reflect your true beleifs.");
-       inputBox.innerText = inputText
-
-       .replace("love", partyApprovedWords["love"])
-       .replace("freedom", partyApprovedWords["freedom"])
-       .replace("rebellion", partyApprovedWords["rebellion"])
-       .replace("individuality", partyApprovedWords["individuality"])
-       .replace("truth", partyApprovedWords["truth"])
-       .replace("privacy", partyApprovedWords["privacy"])
-       .replace("individualism", partyApprovedWords["individualism"])
-       .replace("resistance", partyApprovedWords["resistance"])
-       .replace("knowledge", partyApprovedWords["knowledge"])
-       .replace("emotion", partyApprovedWords["emotion"])
-       .replace("hope", partyApprovedWords["hope"])
-       .replace("curiosity", partyApprovedWords["curiosity"])
-       .replace("creativity", partyApprovedWords["creativity"])
-       .replace("independence", partyApprovedWords["independence"])
-       .replace("dissent", partyApprovedWords["dissent"])
-       .replace("self-expression", partyApprovedWords["self-expression"])
-       .replace("intimacy", partyApprovedWords["intimacy"])
-       .replace("autonomy", partyApprovedWords["autonomy"])
-       .replace("defiance", partyApprovedWords["defiance"])
-       .replace("dignity", partyApprovedWords["dignity"])
-       .replace("compassion", partyApprovedWords["compassion"])
-       .replace("justice", partyApprovedWords["justice"])
-       .replace("truthfulness", partyApprovedWords["truthfulness"])
-       .replace("free will", partyApprovedWords["free will"])
-       .replace("passion", partyApprovedWords["passion"])
-       .replace("equality", partyApprovedWords["equality"])
-       .replace("innovation", partyApprovedWords["innovation"])
-       .replace("joy", partyApprovedWords["joy"])
-       .replace("friendship", partyApprovedWords["friendship"])
-       .replace("open-mindedness", partyApprovedWords["open-mindedness"])
-       .replace("resilience", partyApprovedWords["resilience"])
-       .replace("courage", partyApprovedWords["courage"])
-       .replace("empathy", partyApprovedWords["empathy"])
-       .replace("tolerance", partyApprovedWords["tolerance"]);
- 
-       updateStorage();
+      alert("This praise contains sinful words! Its contents have been modified to reflect your true beleifs.");
+      inputBox.innerText = inputText
+      
+      Object.keys(partyApprovedWords).forEach(word => {
+         const regex = new RegExp(word, 'gi');
+         inputBox.innerText = inputBox.innerText.replace(regex, partyApprovedWords[word]);
+      });
+      updateStorage();
 
    }
 // I love freedom and rebellion!
