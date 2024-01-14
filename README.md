@@ -18,7 +18,7 @@ The project was inspired by the the novel 1984 by George Orwell. In the novel, t
 
 ## an alert is displayed if 'sinful' words are typed ##
 <img width="1703" alt="Screenshot 2024-01-08 at 11 04 37 AM" src="https://github.com/shankarchawla1776/1984-Notes-Website-Project/assets/139474458/2978d9a2-8357-4eb5-9a3c-4f2e79bb1ddd">
-In this instance, the sinful words are 'love' and 'rebellion'
+In this instance, the sinful words are 'love,' 'rebellion,' and 'freedom.'
 
 ## new text appears in place of the sinful words ##
 <img width="1709" alt="Screenshot 2024-01-08 at 11 08 34 AM" src="https://github.com/shankarchawla1776/1984-Notes-Website-Project/assets/139474458/99b7bd29-3da7-4935-a92d-9b7ddf4e0152">
